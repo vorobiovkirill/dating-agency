@@ -1,17 +1,22 @@
-@import "bourbon"
-@import "vars"
+@import bourbon
+@import vars
 
+html
+	font-size: 16px
 
 body
-	color: #757575
-	font-size: 1.5em
+	color: $body-text-color
+	font-size: rem(16px)
 	line-height: 1.5
 	padding: 0
 	margin: 0
-	font-family: 'RobotoRegular', sans-serif
+	font-family: $main-font-family
 	font-style: normal
-	min-width: 320px
-	overflow: hidden
 
-h1
-	color: red
+a
+	color: $base-link-color
+	background-color: transparent
+	text-decoration: none
+	outline: 0
+	&:hover
+		text-decoration: none
