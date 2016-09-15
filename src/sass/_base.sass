@@ -13,6 +13,11 @@ body
 	font-family: $main-font-family
 	font-style: normal
 
+ol, ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
 a
 	color: $base-link-color
 	background-color: transparent
@@ -20,3 +25,20 @@ a
 	outline: 0
 	&:hover
 		text-decoration: none
+
+p
+	margin: 0 0 20px
+
+label
+	display: inline-block
+	max-width: 100%
+	margin-bottom: 5px
+	font-weight: 300
+	font-size: rem(21)
+	color: #fff
+	text-transform: capitalize
+
+h2
+	color: $title-color
+	font-size: rem(24)
+	line-height: rem(30px)

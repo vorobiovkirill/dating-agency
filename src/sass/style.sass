@@ -4,11 +4,19 @@
 @import buttons
 @import vars
 @import header
+@import form
+@import footer
+
+
 
 
 .responsive-img
+	display: block
 	max-width: 100%
-	height:
+	height: auto
+
+.image-circle
+	border-radius: 50%
 
 .text-center
 	text-align: center
@@ -20,9 +28,119 @@
 	text-align: left
 
 
+// СТИЛИ СЕКЦИЙ
+.section
+	position: relative
+	width: 100%
+
+.section-news
+	padding: 45px 0 35px
+	background: #ddd
+
+.section-popular
+	padding: 45px 0 85px
+
+.popular-header
+	margin-bottom: 40px
+
+.popular-ladies-profile
+	position: relative
+	+size(180px)
+	perspective: 180px
+	margin-bottom: 15px
+	&:hover .profile-data
+		+size(100%)
+		@include position(absolute, 0 0 0 0)
+		overflow: hidden
+		background: rgba(0,0,0,0.70)
+		transform: scale(1,1)
+
+	.profile-image
+		position: relative
+		+size(180px)
+		margin: 0 auto
+		// img
+		// 	+size(180px)
+		&:after
+			content: ''
+			@include position(absolute, null 15px 12px null)
+			z-index: 5
+			+size(20px)
+			background: $online
+			border-radius: 50%
+			box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.25)
+
+	.profile-data
+		@include position(absolute, 0 0 0 0)
+		overflow: hidden
+		text-align: center
+		text-transform: capitalize
+		font-size: rem(14)
+		line-height: rem(24)
+		color: #fff
+		background: rgba(0,0,0,0.70)
+		border-radius: 50%
+		transform: scale(0,0)
+		transition: all .4s
+		+size(100%)
+
+		span
+			display: block
+
+		.media-data
+			.profile-media
+				display: inline-block
+
+		.profile-write
+			+size(100%)
+			background: $accent-color
+			color: #fff
+			text-align: center
+			padding: 20px 0
+
+.section-features
+	padding: 95px 0 90px
+	color: #fff
+	background:
+		color: $main-color
+		image: url('../img/features/features.jpg')
+		repeat: no-repeat
+		position: center right
+		size: cover
+
+.features-item
+	position: relative
+	width: 100%
+	overflow: hidden
+	text-align: center
+	padding: 0 50px
+	span
+		display: block
+		padding: 20px 0 10px
+		font-size: rem(18)
+		line-height: rem(30px)
+		font-weight: bold
+		text-transform: uppercase
 
 
+.section-contacts
+	padding: 40px 0 35px
+	color: #fff
+	background:
+		color: #f4b57d
+		image: url('../img/contacts/contacts-bg.jpg')
+		repeat: no-repeat
+		position: center top
+		size: cover
 
+.write-us-header
+	font-size: rem(18)
+	color: #515151
+	span
+		color: #fff
+		font-size: rem(56)
+		line-height: rem(31px)
+		font-weight: 300
 
 
 

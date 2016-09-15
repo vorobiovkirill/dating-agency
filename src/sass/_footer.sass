@@ -1,0 +1,51 @@
+@import bourbon
+@import vars
+
+.page-footer
+	background: $main-color
+	color: #fff
+
+	.footer
+		padding: 65px 0 25px
+		font-size: rem(18)
+		line-height: rem(30px)
+
+		.footer-menu
+			margin-bottom: 75px
+
+	.copyright-area
+		padding: 15px 0
+		background: darken($main-color, 15%)
+
+		.copyright-text
+			text-align: center
+			color: #fff
+			a
+				transition: all .2s ease
+				font-size: 12px
+				font-weight: 300
+				position: relative
+				display: inline-block
+				padding: 5px 0
+				text-decoration: none
+				letter-spacing: 4px
+				text-transform: uppercase
+				color: #ecf0f1
+				outline: none
+				text-shadow: none
+				text-shadow: 0 0 1px rgba(255, 255, 255, 0.3)
+
+		.lantrix-footer-hover a
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				overflow: hidden
+				max-width: 0
+				padding: 5px 0
+				content: attr(data-hover)
+				transition: max-width .5s
+				color: $accent-color
+				border-bottom: 1px solid $accent-color
+			&:hover:before, &:focus:before
+				max-width: 100%
