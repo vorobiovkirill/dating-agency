@@ -1,11 +1,19 @@
 @import bourbon
 @import vars
 
+
+.hero-men
+	background:
+		image: url('../img/hero/hero-ladies.jpg')
+
+.hero-ladies
+	background:
+		image: url('../img/hero/hero-men.jpg')
+
 .header
 	position: relative
 	width: 100%
 	background:
-		image: url('../img/hero/hero.jpg')
 		size: cover
 		position: center
 		repeat: no-repeat
@@ -20,20 +28,42 @@
 	.top-bar
 		padding: 30px 0 40px
 		background:
-			image: url('../img/logo/logo.png')
+			image: url('../img/logo/logo-2.png')
 			repeat: no-repeat
 			position: center
 		.data
+			position: relative
+			display: block
 			float: left
 			text-align: right
-			margin-left: 30px
+			margin-left: 20px
 			.ukr-time, .weather
 				display: block
+				&:after
+					display: block
+					content: ''
+					width: 14px
+					height: 14px
+					position: absolute
+					right: -20px
+			.ukr-time
+				&:after
+					background: url('../img/clock.png')
+					top: 6px
+			.weather
+				&:after
+					background: url('../img/sun.png')
+					top: 29px
+
+
 		.btn
 			float: right
 
 .page-header
-	min-height: 70vh
+	min-height: 72vh
+
+.main-navigation
+	padding-top: 25px
 
 .navigation
 	li
@@ -42,14 +72,13 @@
 		margin-right: 45px
 		text-align: center
 		a
-			color: #fff
+			color: $menu-color
 			transition: color .4s
 			&:hover
-				color: $accent-color
-
+				color: $active-menu-color
 	> li
 		> a
-			color: $base-link-color
+			color: $menu-color
 			font-size: rem(16px)
 			line-height: rem(18x)
 			text-transform: uppercase
@@ -59,3 +88,14 @@
 	padding-top: 65px
 	position: relative
 	z-index: 5
+
+.header-content-wrapper
+	color: #fff
+	font-size: rem(18)
+	line-height: rem(36)
+
+.header-content-title
+	font-size: rem(42)
+	line-height: rem(48px)
+	color: $accent-color
+	margin: 140px 0 30px

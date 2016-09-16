@@ -1,4 +1,4 @@
-// @import reset
+@import normalize
 @import bourbon
 @import base
 @import buttons
@@ -6,8 +6,6 @@
 @import header
 @import form
 @import footer
-
-
 
 
 .responsive-img
@@ -34,11 +32,14 @@
 	width: 100%
 
 .section-news
-	padding: 45px 0 35px
-	background: #ddd
+	padding: 65px 0 30px
+	text-align: center
+	color: $body-text-color
+	font-size: rem(18)
+	line-height: rem(31)
 
 .section-popular
-	padding: 45px 0 85px
+	padding: 35px 0 85px
 
 .popular-header
 	margin-bottom: 40px
@@ -57,10 +58,8 @@
 
 	.profile-image
 		position: relative
-		+size(180px)
+		+size(100%)
 		margin: 0 auto
-		// img
-		// 	+size(180px)
 		&:after
 			content: ''
 			@include position(absolute, null 15px 12px null)
@@ -72,7 +71,9 @@
 
 	.profile-data
 		@include position(absolute, 0 0 0 0)
+		+size(inherit)
 		overflow: hidden
+		padding: 10px 0 0
 		text-align: center
 		text-transform: capitalize
 		font-size: rem(14)
@@ -82,12 +83,11 @@
 		border-radius: 50%
 		transform: scale(0,0)
 		transition: all .4s
-		+size(100%)
-
 		span
 			display: block
 
 		.media-data
+			padding-bottom: 10px
 			.profile-media
 				display: inline-block
 
@@ -95,8 +95,9 @@
 			+size(100%)
 			background: $accent-color
 			color: #fff
+			font-size: rem(18)
 			text-align: center
-			padding: 20px 0
+			padding: 15px 0
 
 .section-features
 	padding: 95px 0 90px
@@ -123,6 +124,11 @@
 		text-transform: uppercase
 
 
+.section-about
+	padding: 90px 0 45px
+	color: $body-text-color
+	font-size: rem(21)
+
 .section-contacts
 	padding: 40px 0 35px
 	color: #fff
@@ -139,9 +145,34 @@
 	span
 		color: #fff
 		font-size: rem(56)
-		line-height: rem(31px)
 		font-weight: 300
 
+.write-us-form
+	.form-control
+		background: rgba(255,255,255,0.52)
+		font-size: rem(18)
+		height: 50px
+		color: #515151
+		border: none
+	.btn
+		float: right
+
+.section-advanteges
+	padding: 85px 0
+	color: $body-text-color
+	font-size: rem(20)
+	line-height: rem(31)
+
+	.register-button
+		margin-top: 40px
+
+.advantages-item
+	text-align: left
+	margin-bottom: 40px
+
+	.advantage-image
+		float: left
+		margin-right: 45px
 
 
 
