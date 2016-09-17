@@ -1,0 +1,24 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.main-navigation
+	padding-top: 25px
+
+.navigation
+	.nav-item
+		position: relative
+		display: inline-block
+		margin-right: 45px
+		text-align: center
+		a
+			color: $menu-link-color
+			transition: color .4s
+			&:hover
+				color: $menu-link-color-active
+	> li
+		> a
+			color: $menu-link-color
+			font-size: rem(16px)
+			line-height: rem(18x)
+			text-transform: uppercase
+			white-space: nowrap

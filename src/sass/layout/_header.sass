@@ -1,5 +1,5 @@
-@import bourbon
-@import vars
+@import 'bourbon'
+@import 'helpers/variables'
 
 
 .hero-men
@@ -31,12 +31,14 @@
 			image: url('../img/logo/logo-2.png')
 			repeat: no-repeat
 			position: center
+
 		.data
 			position: relative
 			display: block
 			float: left
 			text-align: right
 			margin-left: 20px
+
 			.ukr-time, .weather
 				display: block
 				&:after
@@ -46,43 +48,22 @@
 					height: 14px
 					position: absolute
 					right: -20px
+
 			.ukr-time
 				&:after
 					background: url('../img/clock.png')
 					top: 6px
+
 			.weather
 				&:after
 					background: url('../img/sun.png')
 					top: 29px
-
 
 		.btn
 			float: right
 
 .page-header
 	min-height: 72vh
-
-.main-navigation
-	padding-top: 25px
-
-.navigation
-	li
-		position: relative
-		display: inline-block
-		margin-right: 45px
-		text-align: center
-		a
-			color: $menu-color
-			transition: color .4s
-			&:hover
-				color: $active-menu-color
-	> li
-		> a
-			color: $menu-color
-			font-size: rem(16px)
-			line-height: rem(18x)
-			text-transform: uppercase
-			white-space: nowrap
 
 .register
 	padding-top: 65px

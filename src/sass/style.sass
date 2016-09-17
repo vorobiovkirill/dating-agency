@@ -1,29 +1,30 @@
-@import normalize
-@import bourbon
-@import base
-@import buttons
-@import vars
-@import header
-@import form
-@import footer
+// Это единственный выходной файл Sass. Он предназначен только @import других файлов
+
+// 1 - Bourbon
+@import 'bourbon'
+
+// 2 - BASE
+@import 'base/normalize'
+@import 'base/base'
+
+// 3 - COMPONENTS
+@import 'components/buttons'
+
+// 4 - LAYOUT
+@import 'layout/header'
+@import 'layout/navigation'
+@import 'layout/footer'
+@import 'layout/form'
+
+// 5 - PAGES
 
 
-.responsive-img
-	display: block
-	max-width: 100%
-	height: auto
+// 6 - HELPERS
+@import 'helpers/helpers'
+@import 'helpers/variables'
 
-.image-circle
-	border-radius: 50%
 
-.text-center
-	text-align: center
 
-.text-right
-	text-align: right
-
-.text-left
-	text-align: left
 
 
 // СТИЛИ СЕКЦИЙ
@@ -174,7 +175,5 @@
 		float: left
 		margin-right: 45px
 
-
-
-//ALWAYS END
-@import media
+// ALWAYS END
+@import 'components/media'
