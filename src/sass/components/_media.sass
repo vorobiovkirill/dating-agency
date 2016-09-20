@@ -7,20 +7,49 @@
 @media only screen and (max-width : 1200px)
 	/**/
 
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.header
+
+		.top-bar
+			background-size: 100px
+			background-image: none
+
+			.mob-menu
+				visibility: visible
+				position: relative
+				float: left
+				top: 10px
+
+			.data
+				margin-right: 20%
+
+		.main-navigation
+			.nav
+				.navigation
+					display: none
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	html
+		font-size: 14px
+
+	.section-contacts
+		text-align: center
+
+	.page-footer
+		.footer
+			text-align: center
+
+			.footer-menu
+				margin-bottom: 20px
+				ul
+					margin-bottom: 15px
 
 
 /* Custom, iPhone Retina */
@@ -42,12 +71,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.header
+		.mob-menu
+				visibility: hidden
 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	.main-navigation
+		.mobile-logo
+			display: none
 
 
 /* Large Devices, Wide Screens */
