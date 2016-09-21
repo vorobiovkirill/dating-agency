@@ -1,0 +1,101 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.page-start
+	position: relative
+	width: 100%
+	height: 100vh
+	background:
+		color: #fff
+		image: url('../img/start/start-bg.jpg')
+		repeat: no-repeat
+		size: cover
+		position: center
+
+	.logo-start
+		padding: 40px 0 55px
+
+	.global-overlay
+		position: fixed
+		top: 0
+		left: -100vw
+		width: 100%
+		height: 100%
+		overflow: visible
+		opacity: 1
+		transform: translateX(100%)
+
+		.overlay-b
+			position: fixed
+			overflow: hidden
+			top: 0
+			left: -50%
+			width: 100%
+			height: 100%
+			background: rgba(94,177,244,0.15)
+
+		.skew-part-b
+			transform: skew(-16deg, 0deg)
+			background: rgb(35,132,210)
+			+linear-gradient(to right, rgba(35,132,210,1) 0%,rgba(94,177,244,1) 100%)
+			opacity: .15
+
+		.overlay-p
+			position: fixed
+			overflow: hidden
+			top: 0
+			right: -50%
+			width: 100%
+			height: 100%
+			background: rgba(245,91,171,0.15)
+
+		.skew-part-p
+			transform: skew(-16deg, 0deg)
+			background: rgb(245,91,171)
+			+linear-gradient(to right, rgba(245,91,171,1) 0%,rgba(182,56,121,1) 100%)
+			opacity: .15
+
+.start-image-wrapper
+	max-width: 45vw
+	margin: 0 auto
+	.image
+		filter: grayscale(100%)
+
+	.start-men-wrapper
+		position: relative
+		left: 10%
+		width: 50%
+		float: left
+		clip-path: polygon(0 0, 100% 0%, 65% 100%, 0 100%)
+		&:hover
+			.image
+				filter: grayscale(0%)
+
+	.start-ladies-wrapper
+		position: relative
+		right: 10%
+		width: 50%
+		float: left
+		clip-path: polygon(40% 0, 100% 0%, 100% 100%, 1% 100%)
+		&:hover
+			img
+				filter: grayscale(0%)
+
+.start-men-title
+	position: relative
+	width: 100%
+	background: #2485d3
+	color: #fff
+	padding: 10px 0 10px 100px
+	font-size: rem(22)
+	font-weight: bold
+
+.start-ladies-title
+	position: relative
+	width: 100%
+	background: #b8397a
+	color: #fff
+	padding: 10px 0
+	font-size: rem(22)
+	font-weight: bold
+	text-align: center
