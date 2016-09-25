@@ -116,7 +116,7 @@ gulp.task('build', ['removebuild', 'styles', 'scripts'], function() {
 // // ========================================
 gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
 
-	gulp.watch('src/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('src/sass/**/*.sass', ['styles']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('src/libs/**/*.js', ['scripts']); // Наблюдение за js файлами в папке libs
 	gulp.watch('src/js/**/*.js').on("change", browserSync.reload);; // Наблюдение за js файлами в папке js
 	gulp.watch('src/*.html').on("change", browserSync.reload);; // Наблюдение за html файлами в корне проекта
