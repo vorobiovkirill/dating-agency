@@ -12,8 +12,8 @@ const gulp         = require('gulp'), // Подключаем Gulp
 			cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 			autoprefixer = require('gulp-autoprefixer'), // Подключаем библиотеку для автоматического добавления префиксов
 			csscomb 		 = require('gulp-csscomb'), // Подключаем библиотеку для сортировки css свойств
-			notify = require("gulp-notify"), // Подключаем обработчик ошибок Notify
-			plumber = require('gulp-plumber'); // Подключаем Plumber
+			notify       = require("gulp-notify"), // Подключаем обработчик ошибок Notify
+			plumber      = require('gulp-plumber'); // Подключаем Plumber
 
 // // ==========================================================
 // Создаем задачу для browserSync (Обновление без перезагрузки)
@@ -118,8 +118,8 @@ gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
 
 	gulp.watch('src/sass/**/*.sass', ['styles']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('src/libs/**/*.js', ['scripts']); // Наблюдение за js файлами в папке libs
-	gulp.watch('src/js/**/*.js').on("change", browserSync.reload);; // Наблюдение за js файлами в папке js
-	gulp.watch('src/*.html').on("change", browserSync.reload);; // Наблюдение за html файлами в корне проекта
+	gulp.watch('src/js/**/*.js').on("change", browserSync.reload); // Наблюдение за js файлами в папке js
+	gulp.watch('src/*.html').on("change", browserSync.reload); // Наблюдение за html файлами в корне проекта
 
 });
 
