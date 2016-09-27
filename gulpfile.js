@@ -24,6 +24,7 @@ gulp.task('browser-sync', function() {
 		server: { // Определяем параметры сервера
 			baseDir: 'src' // Директория для сервера - src
 		},
+		startPath: 'start.html',
 		notify: false // Отключаем уведомления
 	});
 
@@ -38,7 +39,7 @@ gulp.task('styles', function() {
 		.pipe(plumber({
 				errorHandler: notify.onError(function(err) {
 					return {
-						title: 'Styles',
+						title: 'Styles compilation error',
 						message: err.message
 					};
 				})
