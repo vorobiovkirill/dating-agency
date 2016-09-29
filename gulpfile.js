@@ -20,12 +20,14 @@ const gulp         = require('gulp'), // Подключаем Gulp
 // // ==========================================================
 gulp.task('browser-sync', function() {
 
-	browserSync({ // Выполняем browserSync
+	browserSync({
 		server: { // Определяем параметры сервера
 			baseDir: 'src' // Директория для сервера - src
 		},
+		logPrefix: "Dating Agency",
+		port: 1989,
 		startPath: 'start.html',
-		notify: false // Отключаем уведомления
+		notify: false
 	});
 
 });
@@ -39,7 +41,7 @@ gulp.task('styles', function() {
 		.pipe(plumber({
 				errorHandler: notify.onError(function(err) {
 					return {
-						title: 'Styles compilation error',
+						title: 'Ошибка в стилях. Надо бы исправить',
 						message: err.message
 					};
 				})
