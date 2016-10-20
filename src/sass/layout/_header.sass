@@ -39,33 +39,6 @@
 			repeat: no-repeat
 			position: center
 
-		.data
-			position: relative
-			display: block
-			float: right
-			text-align: right
-			margin-right: 75px
-
-			.ukr-time, .weather
-				display: block
-				&:after
-					display: block
-					content: ''
-					width: 14px
-					height: 14px
-					position: absolute
-					right: -20px
-
-			.ukr-time
-				&:after
-					background: url('../img/clock.png')
-					top: 10%
-
-			.weather
-				&:after
-					background: url('../img/sun.png')
-					top: 60%
-
 		.btn
 			float: right
 
@@ -86,3 +59,30 @@
 	font-size: rem(42)
 	line-height: rem(48px)
 	margin: 200px 0 30px
+
+.data
+	position: relative
+	display: block
+	float: right
+	text-align: right
+	margin-right: 75px
+
+	.ukr-time, .weather
+		display: block
+		&:after
+			display: block
+			content: ''
+			width: 14px
+			height: 14px
+			position: absolute
+			right: -20px
+
+	.ukr-time
+		&:after
+			background: url('../img/clock.png')
+			top: 10%
+
+	.weather
+		&:after
+			background: url('../img/sun.png')
+			top: 60%

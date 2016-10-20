@@ -1,0 +1,201 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.body-girls-profile
+	background: #fafafa
+
+.page-girls-profile
+	.profile-header
+		background: $main-color
+		box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.41)
+
+.logo
+	padding: 15px 0
+	text-align: center
+
+.profile-navigation
+	padding: 15px 0
+	.nav-item
+		display: inline-block
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+		a
+			font-size: rem(11.77px)
+			color: #fff
+			text-transform: uppercase
+
+.login-wrapper
+	position: relative
+	width: 100%
+	margin-top: 5px
+
+	.data
+		margin-right: 0
+		float: left
+
+	.login-data
+		position: relative
+		+size(190px 50px)
+		float: left
+		text-align: center
+		font-size: rem(14px)
+
+		.login-name
+			width: 140px
+			height: 25px
+			float: left
+			background: #fff
+			font-size: 14px
+			line-height: 25px
+			color: $grey
+			text-align: center
+			position: relative
+			left: 25px
+			border-radius: 25px
+			&:before
+				+position(absolute, 6px 0 0 8px)
+				content: ''
+				+size(13px)
+				background: $online
+				border-radius: 50%
+
+		.login-avatar
+			position: relative
+			top: -20px
+			+size(50px)
+			float: left
+			img
+				+size(50px)
+				border: 3px solid #fff
+
+.sidebar-wrapper
+
+	.sidebar-title
+		height: 32px
+		background: $main-color
+		color: #fff
+		font-size: rem(16)
+		line-height: rem(32px)
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 7px
+
+	.sidebar-menu
+		background: #fff
+		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
+		padding: 25px 15px
+		font-size: rem(14)
+		line-height: rem(30px)
+		text-transform: capitalize
+		a
+			color: #6e6e6e
+
+		.left-fixer
+			display: block
+			&:hover
+				background: rgba(33,150,243,0.05)
+
+			.left-icon
+				+size(45px 25px)
+				background:
+					image: url('../img/sprites/si-icons.png')
+					repeat: no-repeat
+					position: 7px 7px
+
+			.right-count
+				color: $main-color
+				font-weight: 700
+
+#profile-sidebar
+	.left-label
+		overflow: hidden
+		text-overflow: ellipsis
+	#l-ms
+		.left-icon
+			background-position: 7px 9px
+	#l-ch
+		.left-icon
+			background-position: 7px -19px
+	#l-cnn
+		.left-icon
+			background-position: 7px -50px
+	#l-vie
+		.left-icon
+			background-position: 7px -76px
+	#l-lik
+		.left-icon
+			background-position: 7px -102px
+	#l-fav
+		.left-icon
+			background-position: 7px -135px
+	#l-cnt
+		.left-icon
+			background-position: 7px -195px
+	#l-blk
+		.left-icon
+			background-position: 7px -165px
+	#l-pm
+		.left-icon
+			background-position: 7px -225px
+
+.breadcrumbs-section
+	margin-bottom: 7px
+
+.go-back
+	height: 32px
+	background: #fff
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
+	font-size: rem(14)
+	line-height: rem(32px)
+	color: $main-color
+	text-align: center
+	padding: 7px 40px
+
+.breadcrumbs
+	display: block
+	height: 32px
+	background: #ffffff
+	line-height: rem(32px)
+	padding: 0 25px
+	box-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+	overflow: hidden
+	li
+		margin: 0
+		padding: 0 16px 0 0
+		float: left
+		&:before
+			content: "/"
+			color: #949494
+		&:first-child
+			&:before
+				content: ''
+		span
+			color: #949494
+			padding-left: 16px
+
+
+.profile-functions
+	text-align: center
+
+	.profile-status
+		display: block
+		margin-bottom: 25px
+		font-size: rem(14px)
+		margin-bottom: 25px
+
+	.is-online
+		color: $online
+
+	.is-ofline
+		color: red
+
+	.function-item
+		padding-bottom: 8px
+		a
+			display: block
+			+size(50px)
+			line-height: rem(50px)
+			border-radius: 50%
+			background:
+				color: $main-color
