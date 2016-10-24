@@ -65,6 +65,7 @@ gulp.task('scripts', function() {
 
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/jquery/dist/jquery.min.js', // Берем jQuery
+		'bower_components/jquery-ui/jquery-ui.js', // Берем jQuery
 		'src/libs/mmenu/dist/js/jquery.mmenu.all.min.js', // Берем mmenu
 		'bower_components/magnific-popup/dist/jquery.magnific-popup.js', // Берем magnific-popup
 		// сюда через заяпятую перечисляем все библиотеки

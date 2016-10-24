@@ -53,6 +53,7 @@
 			position: relative
 			left: 25px
 			border-radius: 25px
+			cursor: pointer
 			&:before
 				+position(absolute, 6px 0 0 8px)
 				content: ''
@@ -69,11 +70,98 @@
 				+size(50px)
 				border: 3px solid #fff
 
+.login-data-dropdown
+	width: 180px
+	+position(absolute, 55px 0 null 15px)
+	z-index: 5
+	background: $main-color
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.26)
+	border-radius: 15px
+	color: #fff
+	font-size: rem(14)
+	line-height: rem(30px)
+	text-align: left
+
+	.lg-dropdown-wrapper
+		position: relative
+		background: #fff
+		box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.26)
+		border-radius: 15px
+		padding: 15px
+		color: #4c4c4c
+		&:before
+			+position(absolute, 24px 0 0 15px)
+			content: ''
+			+size(13px)
+			background: $online
+			border-radius: 50%
+		>
+			span
+				margin-left: 30px
+
+		.lg-dropdown-menu
+			padding-top: 5px
+			text-align: left
+			border-top: 1px solid #a8a8a8
+			li
+				&:hover
+					background: rgba(33,150,243,0.05)
+				a
+					display: block
+					color: #4c4c4c
+					font-size: rem(14)
+					line-height: rem(30px)
+
+	.lg-data-progress
+
+		.progress-bar
+			margin-bottom: 10px
+			span
+				font-size: 14px
+				text-transform: none
+				margin-bottom: 7px
+
+		.progress-bar-container
+			width: 100%
+			max-width: 350px
+			height: 17px
+			background: #fff
+			overflow: hidden
+			border-radius: 10px
+			border: 2px solid $accent-color
+
+			.progress-bar-value
+				height: 17px
+				float: left
+				background: $accent-color
+
+			.value-75
+				width: 75%
+
+	.lg-dropdown-footer
+		padding: 0 15px
+		font-size: rem(14)
+		line-height: rem(30px)
+		a
+			color: #fff
+			position: relative
+			&:after
+				content: ''
+				+position(absolute, 4px null null 53px)
+				width: 15px
+				height: 13px
+				background:
+					image: url('../img/logout.png')
+					repeat: no-repeat
+					size: cover
+					position: center
+
+
 .search
 	margin-bottom: 10px
 
 .search-wrapper
-	padding: 7px 15px
+	padding: 0 15px
 	background: #81c0f5
 	&:before
 		content: ''
@@ -83,6 +171,55 @@
 		content: ''
 		+position(absolute, 0 -29px 0 null)
 		+triangle(44px, $accent-color, up-left)
+
+.search-field
+	padding-top: 7px
+	.form-control
+		border-radius: 0
+
+.slider-age
+	padding-top: 12px
+	padding-bottom: 10px
+	label
+		float: left
+		margin-right: 35px
+		margin-bottom: 0
+
+.ui-slider-horizontal
+	height: 5px
+	border-radius: 0
+	background: #fff
+	margin-top: 8px
+	width: 185px
+	float: left
+	.ui-slider-range
+		background: $accent-color
+		height: 5px
+	.ui-corner-all
+		border-radius: 0
+	.ui-slider-handle
+		+size(15px)
+		background: $main-color
+		border-radius: 50%
+		border: none
+		cursor: pointer
+		outline: 0
+
+.checkboxes
+	padding: 10px 0
+
+.checkbox
+	float: left
+	margin-right: 40px
+	label
+		margin: 0
+
+.search-submit
+	padding-right: 0
+	button
+		float: right
+		border-radius: 0
+		padding: 10px 25px
 
 .profile-wrapper
 	margin-bottom: 25px
@@ -165,10 +302,14 @@
 	background: #fff
 	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
 	font-size: rem(14)
-	line-height: rem(32px)
 	color: $main-color
 	text-align: center
 	padding: 7px 40px
+	float: left
+	margin-right: 5px
+	&:hover
+		background: $main-color
+		color: #fff
 
 .breadcrumbs
 	display: block
@@ -192,11 +333,15 @@
 			color: #949494
 			padding-left: 16px
 
+.profile-avatar-wrapper
+	background: #fff
+	box-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+	margin-bottom: 10px
+	padding: 15px
+
 .profile-avatar
 	position: relative
-	background: #fff
-	padding: 15px
-	box-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+	margin-bottom: 12px
 
 	.object-fit-cover
 		width: 100%
@@ -205,7 +350,7 @@
 
 	.profile-avatar-buttons
 		width: 120px
-		+position(absolute, null null 15px 15px)
+		+position(absolute, null null 0 null)
 		background: rgba(255,255,255,0.70)
 		border-top-left-radius: 5px
 		border-top-right-radius: 10px
@@ -231,6 +376,15 @@
 			.left-icon
 				background-position: 10px -400px
 
+.popup-gallery
+	text-align: center
+	overflow: hidden
+	li
+		display: inline-block
+	img
+		width: 83px
+		height: 75px
+
 .profile-video
 	background: #fff
 	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
@@ -238,6 +392,7 @@
 
 .profile-functions
 	text-align: center
+	padding-top: 15px
 
 	.function-item
 		padding-bottom: 8px

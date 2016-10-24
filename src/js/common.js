@@ -1,5 +1,28 @@
 $(function() {
 
+	// Вызов меню при клике
+
+	$(".login-name").click(function(){
+
+		if ($(".login-data-dropdown").hasClass('hidden')){
+
+			$(".login-data-dropdown").removeClass("hidden");
+
+			$(this).parent().find(".login-data-dropdown").addClass("hidden-no");
+
+		}
+
+		else {
+
+			$(".login-data-dropdown").removeClass("hidden-no");
+
+			$(this).parent().find(".login-data-dropdown").addClass("hidden");
+
+		}
+
+	});
+
+
 	// Обьявляем вызов Мобильного меню
 	// Документация: http://mmenu.frebsite.nl/  https://github.com/FrDH/jQuery.mmenu
 
@@ -8,6 +31,18 @@ $(function() {
 			"add": false
 		}
 	});
+
+	// Обьявляем вызов jquery ui slider
+	// Документация: https://jqueryui.com/slider/
+
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 100,
+		step: 1,
+		values: [ 18, 55 ]
+	});
+
 
 	// Обьявляем вызов Мобильного меню
 	// Документация: http://dimsemenov.com/plugins/magnific-popup/documentation.html

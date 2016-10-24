@@ -38,6 +38,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
@@ -114,6 +115,42 @@
 
 								</div>
 
+								<div class="login-data-dropdown hidden">
+
+									<div class="lg-dropdown-wrapper">
+
+										<span>Status: <span class="is-online">online</span></span>
+
+										<div class="lg-data-progress">
+
+											<div class="progress-bar">
+
+												<span>75% full info</span>
+
+												<div class="progress-bar-container">
+													<div class="progress-bar-value value-75"></div>
+												</div>
+
+											</div>
+
+										</div>
+
+										<ul class="lg-dropdown-menu">
+											<li><a href="#">Dashboard</a></li>
+											<li><a href="#">My profile</a></li>
+											<li><a href="#">History</a></li>
+											<li><a href="#">Settings</a></li>
+											<li><a href="#">Account settings</a></li>
+										</ul>
+
+									</div>
+
+									<div class="lg-dropdown-footer">
+										<a href="#">Log out</a>
+									</div>
+
+								</div>
+
 							</div>
 
 						</div>
@@ -148,17 +185,53 @@
 
 									<div class="row">
 
-										<div class="col-lg-3">
+										<div class="col-lg-3 search-field">
+
+											<!-- <span class="icon-search"><img src="img/search.png" alt=""></span> -->
 
 											<input type="text" class="form-control" id="" name="" value="" placeholder="Enter search options">
 
 										</div>
 
-										<div class="col-lg-7">
+										<div class="col-xs-12 col-lg-3 slider-age">
+
+											<label for="">Age:</label>
+
+											<div id="slider-range"></div>
 
 										</div>
 
-										<div class="col-lg-5">
+										<div class="col-xs-12 col-lg-4 checkboxes">
+
+											<div class="checkbox">
+
+												<input type="checkbox" name="" value="">
+
+												<label for="">New</label>
+
+											</div>
+
+											<div class="checkbox">
+
+												<input type="checkbox" name="" value="">
+
+												<label for="">Popular</label>
+
+											</div>
+
+											<div class="checkbox">
+
+												<input type="checkbox" name="" value="">
+
+												<label for="">Online</label>
+
+											</div>
+
+										</div>
+
+										<div class="col-xs-12 col-lg-2 search-submit">
+
+											<button type="submit" class="btn btn-purple">search</button>
 
 										</div>
 
@@ -316,13 +389,9 @@
 
 								<div class="row">
 
-									<div class="col-lg-2">
+									<div class="col-lg-12">
 
 										<a class="go-back" href="#">Go back</a>
-
-									</div>
-
-									<div class="col-lg-10">
 
 										<ul class="breadcrumbs">
 											<li><span>Home</span></li>
@@ -346,56 +415,81 @@
 
 										<!-- ======================== PROFILE AVATAR START ======================== -->
 
-										<div class="profile-avatar">
+										<div class="profile-avatar-wrapper">
 
-											<a class="test-popup-link" href="img/anketa-images/telka-1.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-1.jpg" alt=""></a>
+											<div class="profile-avatar">
 
-											<div class="profile-avatar-buttons">
+												<a href="img/anketa-images/telka-1.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-1.jpg" alt=""></a>
 
-												<ul>
-													<li id="l-bld">
-														<a href="#">
-															<span class="left-fixer">
-																<span class="left-icon fl_l"></span>
-															</span>
+												<div class="profile-avatar-buttons">
+
+													<ul>
+														<li id="l-bld">
+															<a href="#">
+																<span class="left-fixer">
+																	<span class="left-icon fl_l"></span>
+																</span>
+															</a>
+														</li>
+														<li id="l-str">
+															<a href="#">
+																<span class="left-fixer">
+																	<span class="left-icon fl_l"></span>
+																</span>
+															</a>
+														</li>
+														<li id="l-hrt">
+															<a href="#">
+																<span class="left-fixer">
+																	<span class="left-icon fl_l"></span>
+																</span>
+															</a>
+														</li>
+													</ul>
+
+												</div>
+
+											</div>
+
+											<!-- ======================== PROFILE AVATAR END ======================== -->
+
+											<!-- ======================== PROFILE PHOTOS START ======================== -->
+
+											<div class="profile-photos">
+
+												<ul class="popup-gallery">
+
+													<li>
+														<a href="img/anketa-images/telka-2.jpg">
+															<img class="object-fit-cover" src="img/anketa-images/telka-2.jpg" alt="">
 														</a>
 													</li>
-													<li id="l-str">
-														<a href="#">
-															<span class="left-fixer">
-																<span class="left-icon fl_l"></span>
-															</span>
+
+													<li>
+														<a href="img/anketa-images/telka-3.jpg">
+															<img class="object-fit-cover" src="img/anketa-images/telka-3.jpg" alt="">
 														</a>
 													</li>
-													<li id="l-hrt">
-														<a href="#">
-															<span class="left-fixer">
-																<span class="left-icon fl_l"></span>
-															</span>
+
+													<li>
+														<a href="img/anketa-images/telka-4.jpg">
+															<img class="object-fit-cover" src="img/anketa-images/telka-4.jpg" alt="">
 														</a>
 													</li>
+
+													<li>
+														<a href="img/anketa-images/telka-5.jpg">
+															<img class="object-fit-cover" src="img/anketa-images/telka-5.jpg" alt="">
+														</a>
+													</li>
+
 												</ul>
 
 											</div>
 
-										</div>
-
-										<!-- ======================== PROFILE AVATAR END ======================== -->
-
-										<!-- ======================== PROFILE PHOTOS START ======================== -->
-
-										<div class="profile-photos">
-
-											<div class="popup-gallery">
-												<a href="img/anketa-images/telka-1.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-1.jpg" alt="" width="85" height="75"></a>
-												<a href="img/anketa-images/telka-2.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-2.jpg" alt="" width="85" height="75"></a>
-												<a href="img/anketa-images/telka-3.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-3.jpg" alt="" width="85" height="75"></a>
-												<a href="img/anketa-images/telka-1.jpg"><img class="object-fit-cover" src="img/anketa-images/telka-1.jpg" alt="" width="85" height="75"></a>
-											</div>
+											<!-- ======================== PROFILE PHOTOS END ======================== -->
 
 										</div>
-
-										<!-- ======================== PROFILE PHOTOS END ======================== -->
 
 										<!-- ======================== PROFILE VIDEO START ======================== -->
 
@@ -412,8 +506,6 @@
 										<!-- ======================== PROFILE VIDEO END ======================== -->
 
 									</div>
-
-
 
 									<!-- ======================== PROFILE FUNCTIONS START ======================== -->
 
