@@ -7,7 +7,7 @@
 	background: #ffffff
 	line-height: rem(32px)
 	padding: 0 25px
-	box-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+	box-shadow: $block-shadow
 	overflow: hidden
 	li
 		margin: 0
@@ -15,10 +15,10 @@
 		float: left
 		&:before
 			content: "/"
-			color: #949494
+			color: $lightengrey
 		&:first-child
 			&:before
 				content: ''
 		span
-			color: #949494
+			color: $lightengrey
 			padding-left: 16px

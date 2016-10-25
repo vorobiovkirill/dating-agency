@@ -3,36 +3,44 @@
 /**
  * 1. Стандартный шрифт сайта PT Sans
  */
-
-$PT-Sans: 'PT Sans', sans-serif
+$base-font-size: 16px
+$base-line-height: 1.5
+$PT-Sans: 'PT Sans', Helvetica, Arial, sans-serif
 $main-font-family: $PT-Sans
 
 /**
  * 2. Цвета Сайта
  */
 
-$blue-color: #2196f3
-$purple-color: #9575cd
-$green-color: #3fc148
-$lightgrey: #949494
+/* Основные цвета */
+
+$blue-color: #2196f3 /* основной */
+$purple-color: #9575cd /* акцентный */
+
+/* Вспомогательные цвета */
+
+$green-color: #3fc148 /* Онлайн */
+$lightengrey: #949494 /* Офлайн */
+$lightgrey: #4c4c4c
 $grey: #212121
+
+/* Назначаем цвета */
 
 $main-color: $blue-color
 $accent-color: $purple-color
 $body-text-color: $grey
+$online: $green-color
+$offline: $lightengrey
 
-/**
- * 3 - Цвета меню
- */
 $menu-link-color: #7291aa
 $menu-link-color-active: $accent-color
-
 $base-link-color: $main-color
 
-$online: $green-color
-$offline: $lightgrey
-
-
+/**
+ * 3 - Тени
+ */
+$profile-header-shadow: 0 1px 4px 0 rgba(0,0,0,.41)
+$block-shadow: 0 0 1px 0 rgba(0,0,0,.22)
 
 =mt($time)
 	transition: all $time ease
