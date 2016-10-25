@@ -1,0 +1,80 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.search
+	margin-bottom: 10px
+
+.search-wrapper
+	padding: 0 15px
+	background: #81c0f5
+	&:before
+		content: ''
+		+position(absolute, 0 0 0 -29px)
+		+triangle(44px, #81c0f5, up-right)
+	&:after
+		content: ''
+		+position(absolute, 0 -29px 0 null)
+		+triangle(44px, $accent-color, up-left)
+
+.search-field
+	padding-top: 7px
+
+	.form-control
+		border-radius: 0
+
+.slider-age
+	padding-top: 12px
+	padding-bottom: 10px
+	label
+		font-size: rem(12)
+		float: left
+		margin-right: 35px
+		margin-bottom: 0
+
+.ui-slider-horizontal
+	height: 5px
+	border-radius: 0
+	background: #fff
+	margin-top: 8px
+	width: 185px
+	float: left
+
+	.ui-slider-range
+		background: $accent-color
+		height: 5px
+
+	.ui-corner-all
+		border-radius: 0
+
+	.ui-slider-handle
+		+size(15px)
+		background: $main-color
+		border-radius: 50%
+		border: none
+		cursor: pointer
+		outline: 0
+
+.checkboxes
+	padding-top: 10px
+	padding-bottom: 10px
+
+.checkbox
+	float: left
+	margin-right: 30px
+	label
+		font-size: rem(12)
+		margin: 0
+
+.more-opt
+	font-size: rem(12)
+	position: relative
+	color: #fff
+	&:hover
+		color: rgba(255,255,255,0.75)
+
+.search-submit
+	padding-right: 0
+	button
+		float: right
+		border-radius: 0
+		padding: 10px 25px

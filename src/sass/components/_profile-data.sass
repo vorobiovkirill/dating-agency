@@ -1,0 +1,51 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.profile-data
+	background: #fff
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
+	padding: 20px 30px
+
+	.profile-data-name
+		font-size: rem(30)
+		line-height: rem(30px)
+		color: #4c4c4c
+		margin-bottom: 20px
+
+		.is-online
+			font-size: rem(18)
+
+		.is-ofline
+			font-size: rem(18)
+
+	.profile-data-location
+		color: #4c4c4c
+		font-size: rem(14)
+		line-height: rem(30px)
+		margin-bottom: 20px
+
+		.left-icon
+			+size(44px 25px)
+			background:
+				image: url('../img/sprites/icons.png')
+				repeat: no-repeat
+				position: 0px 8px
+
+.personal-data
+	padding: 30px 0
+	border-top: 1px solid #dadada
+	font-size: rem(14)
+	line-height: rem(14px)
+
+	.personal-info
+		padding-top: 13px
+		color: #949494
+
+		.label
+			width: 165px
+			float: left
+
+		.labeled
+			color: #4c4c4c
+			overflow: hidden
+			text-transform: capitalize

@@ -1,0 +1,24 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.breadcrumbs
+	display: block
+	height: 32px
+	background: #ffffff
+	line-height: rem(32px)
+	padding: 0 25px
+	box-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+	overflow: hidden
+	li
+		margin: 0
+		padding: 0 16px 0 0
+		float: left
+		&:before
+			content: "/"
+			color: #949494
+		&:first-child
+			&:before
+				content: ''
+		span
+			color: #949494
+			padding-left: 16px

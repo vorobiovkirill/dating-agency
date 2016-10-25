@@ -1,0 +1,44 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.sidebar-wrapper
+
+	.sidebar-title
+		height: 32px
+		background: $main-color
+		color: #fff
+		font-size: rem(16)
+		line-height: rem(32px)
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 7px
+
+	.sidebar-menu
+		background: #fff
+		box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.22)
+		padding: 20px 10px
+		font-size: rem(14)
+		line-height: rem(30px)
+		text-transform: capitalize
+		a
+			color: #6e6e6e
+
+		.left-fixer
+			display: block
+			&:hover
+				background: rgba(33,150,243,0.05)
+
+			.left-icon
+				+size(30px 25px)
+				background:
+					image: url('../img/sprites/icons.png')
+					repeat: no-repeat
+					position: 7px 7px
+
+			.right-count
+				color: $main-color
+				font-weight: 700
+
+			.left-label
+				overflow: hidden
+				text-overflow: ellipsis

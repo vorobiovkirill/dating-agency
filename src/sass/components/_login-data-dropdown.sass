@@ -1,0 +1,88 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.login-data-dropdown
+	width: 180px
+	+position(absolute, 55px 0 null 15px)
+	z-index: 5
+	background: $main-color
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.26)
+	border-radius: 15px
+	color: #fff
+	font-size: rem(14)
+	line-height: rem(30px)
+	text-align: left
+
+	.lg-dropdown-wrapper
+		position: relative
+		background: #fff
+		box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.26)
+		border-radius: 15px
+		padding: 15px
+		color: #4c4c4c
+		&:before
+			+position(absolute, 24px 0 0 15px)
+			content: ''
+			+size(13px)
+			background: $online
+			border-radius: 50%
+		>
+			span
+				margin-left: 30px
+
+		.lg-dropdown-menu
+			padding-top: 5px
+			text-align: left
+			border-top: 1px solid #a8a8a8
+			li
+				&:hover
+					background: rgba(33,150,243,0.05)
+				a
+					display: block
+					color: #4c4c4c
+					font-size: rem(14)
+					line-height: rem(30px)
+
+	.lg-data-progress
+
+		.progress-bar
+			margin-bottom: 10px
+			span
+				font-size: 14px
+				text-transform: none
+				margin-bottom: 7px
+
+		.progress-bar-container
+			width: 100%
+			max-width: 350px
+			height: 17px
+			background: #fff
+			overflow: hidden
+			border-radius: 10px
+			border: 2px solid $accent-color
+
+			.progress-bar-value
+				height: 17px
+				float: left
+				background: $accent-color
+
+			.value-75
+				width: 75%
+
+	.lg-dropdown-footer
+		padding: 0 15px
+		font-size: rem(14)
+		line-height: rem(30px)
+		a
+			color: #fff
+			position: relative
+			&:after
+				content: ''
+				+position(absolute, 4px null null 53px)
+				width: 15px
+				height: 13px
+				background:
+					image: url('../img/logout.png')
+					repeat: no-repeat
+					size: cover
+					position: center

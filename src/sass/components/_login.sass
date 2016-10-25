@@ -1,0 +1,47 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.login-wrapper
+	position: relative
+	width: 100%
+	margin-top: 5px
+
+	.data
+		margin-right: 0
+		float: left
+
+	.login-data
+		position: relative
+		+size(190px 50px)
+		float: right
+		text-align: center
+		font-size: rem(14px)
+
+		.login-name
+			width: 140px
+			height: 25px
+			float: left
+			background: #fff
+			font-size: 14px
+			line-height: 25px
+			color: $grey
+			text-align: center
+			position: relative
+			left: 25px
+			border-radius: 25px
+			cursor: pointer
+			&:before
+				+position(absolute, 6px 0 0 8px)
+				content: ''
+				+size(13px)
+				background: $online
+				border-radius: 50%
+
+		.login-avatar
+			position: relative
+			top: -20px
+			+size(50px)
+			float: left
+			img
+				+size(50px)
+				border: 3px solid #fff
