@@ -1,16 +1,47 @@
 @import 'bourbon'
 @import 'helpers/variables'
 
-.profile-functions
-	text-align: center
-	padding-top: 15px
+// .profile-functions
+// 	text-align: center
+// 	padding-top: 15px
 
-	.function-item
-		padding-bottom: 8px
-		a
+// 	.function-item
+// 		padding-bottom: 8px
+// 		a
+// 			display: block
+// 			+size(50px)
+// 			line-height: rem(50px)
+// 			border-radius: 50%
+// 			background:
+// 				color: $main-color
+
+.profile-functions
+	background: #fff
+	box-shadow: $block-shadow
+	margin-top: 15px
+	margin-bottom: 15px
+	padding: 15px 15px 5px
+
+.profile-functions-buttons
+	a
+		font-size: rem(14)
+		margin-bottom: 10px
+
+.profile-functions-menu
+	font-size: rem(14)
+	line-height: rem(34px)
+	text-transform: capitalize
+	a
+		color: $lightengrey
+
+	.left-fixer
 			display: block
-			+size(50px)
-			line-height: rem(50px)
-			border-radius: 50%
+			&:hover
+				background: rgba(33,150,243,0.05)
+
+	.left-icon
+			+size(34px 25px)
 			background:
-				color: $main-color
+				image: url('../img/sprites/icons.png')
+				repeat: no-repeat
+				position: 0px 8px
