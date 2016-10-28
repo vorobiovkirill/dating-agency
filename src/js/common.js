@@ -43,6 +43,23 @@ $(function() {
 		values: [ 18, 55 ]
 	});
 
+	// Обьявляем вызов accordion
+	// Документация: http://www.w3schools.com/howto/howto_js_accordion.asp
+
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+
+		acc[i].onclick = function() {
+
+			this.classList.toggle("active");
+			this.nextElementSibling.classList.toggle("show");
+
+		}
+
+	}
+
 
 	// Обьявляем вызов Мобильного меню
 	// Документация: http://dimsemenov.com/plugins/magnific-popup/documentation.html

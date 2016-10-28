@@ -1,0 +1,108 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.price-image-section
+	position: relative
+	height: 330px
+	background:
+		image: url('../img/hero/hero-ladies.jpg')
+		size: cover
+		repeat: no-repeat
+		position: center -115px
+
+.price-image-title
+	padding-top: 200px
+	text-align: center
+	h1
+		background: rgba(255,255,255,0.70)
+		margin: 0
+		padding: 35px 0 65px
+
+.purchasing-section
+	padding-top: 65px
+
+.purchasing-title
+	display: block
+	text-align: center
+	margin-bottom: 50px
+	font-size: rem(24)
+	line-height: rem(30px)
+	color: #757575
+
+.purchasing-item
+	margin-bottom: 10px
+	&:hover
+		box-shadow: $block-shadow
+
+	.purchasing-coast
+		border-width: 1px 1px 0 1px
+		border-color: #bdbdbd
+		border-style: solid
+		padding: 30px 0 25px
+
+		.purchasing-coins
+			width: 90px
+			border-right: 1px solid #bdbdbd
+			font-size: rem(18)
+			line-height: rem(30px)
+			color: $grey
+			text-align: center
+
+	.purchasing-package
+		margin-left: 20px
+		font-size: rem(24)
+		line-height: rem(30px)
+		color: $grey
+		text-transform: uppercase
+
+.accordion-section
+	margin-top: 95px
+
+.accordion-wrapper
+	margin-bottom: 75px
+
+.accordion-title
+	border-bottom: 2px solid #bdbdbd
+
+.acc-title
+	display: block
+	margin-bottom: 30px
+	padding-left: 30px
+	font-size: rem(24)
+	line-height: rem(30px)
+	color: #757575
+
+.accordion-items-wrapper
+	margin-top: 20px
+	padding: 0 30px
+
+.accordion-item
+	border-bottom: 1px solid #e3e1e1
+	&:last-child
+		border: 0
+
+	.accordion
+		position: relative
+		display: block
+		padding: 17px 80px 20px
+		color: #0288d1
+		font-size: rem(18)
+		&:before
+			+position(absolute, 25px null null 20px)
+			content: '+'
+			font-size: 1.5em
+			line-height: 0.5em
+			float:left
+			transition: transform 0.3s ease-in-out
+		&:hover
+			background: #f2edfe
+			cursor: pointer
+
+.accordion-details
+	font-size: rem(14)
+	color: #757575
+	padding: 22px 50px 40px
+	display: none
+
+.accordion-details.show
+	display: block
