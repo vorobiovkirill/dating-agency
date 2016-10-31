@@ -1,0 +1,72 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.accordion-wrapper
+	margin-bottom: 75px
+
+.accordion-title
+	border-bottom: 2px solid #bdbdbd
+
+.acc-title
+	display: block
+	margin-bottom: 30px
+	padding-left: 30px
+	font-size: rem(24)
+	line-height: rem(30px)
+	color: #757575
+
+.accordion-items-wrapper
+	margin-top: 20px
+	padding: 0 30px
+
+.accordion-item
+	border-bottom: 1px solid #e3e1e1
+	&:last-child
+		border: 0
+
+	.accordion
+		position: relative
+		display: block
+		padding: 17px 80px 20px
+		color: #0288d1
+		font-size: rem(18)
+		&:before
+			+position(absolute, 25px null null 20px)
+			content: '+'
+			font-size: 1.5em
+			line-height: 0.5em
+			float: left
+			transition: transform 0.6s ease-in-out
+		&:hover
+			background: #f2edfe
+			cursor: pointer
+
+		.acc-coast
+			+position(absolute, null 10px null null)
+			font-size: rem(18)
+			text-transform: uppercase
+			color: $grey
+
+		.acc-varies
+			@extend .acc-coast
+			text-transform: capitalize
+			color: $main-color
+
+		.acc-recieve
+			@extend .acc-coast
+			color: $green-color
+
+.accordion-details
+	font-size: rem(14)
+	color: #757575
+	padding: 22px 50px 40px
+	display: none
+
+.accordion-details.show
+	display: block
+
+.accordion.active
+	background: #f2edfe
+	&:before
+		transform: rotate(135deg)
+		transition: transform 0.6s ease-in-out

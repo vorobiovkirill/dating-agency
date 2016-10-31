@@ -1,0 +1,37 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.accordionIn
+	animation-name: accordionIn
+	animation-duration: 0.65s
+	animation-iteration-count: 1
+	animation-direction: normal
+	animation-timing-function: ease-in-out
+	animation-fill-mode: both
+	animation-delay: 0s
+
+.accordionOut
+	animation-name: accordionOut
+	animation-duration: 0.75s
+	animation-iteration-count: 1
+	animation-direction: alternate
+	animation-timing-function: ease-in-out
+	animation-fill-mode: both
+	animation-delay: 0s
+
+@keyframes accordionIn
+	0%
+		opacity: 0
+		transform: scale(0.8)
+	100%
+		opacity: 1
+		transform: scale(1)
+
+
+@keyframes accordionOut
+	0%
+		opacity: 1
+		transform: scale(1)
+	100%
+		opacity: 0
+		transform: scale(0.8)
