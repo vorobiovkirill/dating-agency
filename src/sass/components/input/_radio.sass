@@ -1,0 +1,90 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.pedit-input input
+
+	&[type="checkbox"], &[type="radio"]
+		border: 0
+		clip: rect(0 0 0 0)
+		height: 1px
+		margin: -1px
+		overflow: hidden
+		padding: 0
+		position: absolute
+		width: 1px
+
+	&[type="checkbox"]:focus + label:before, &[type="radio"]:focus + label:before, &[type="checkbox"]:hover + label:before, &[type="radio"]:hover + label:before
+		border-color: $main-color
+		background-color: #f2f2f2
+
+	&[type="checkbox"]:active + label:before, &[type="radio"]:active + label:before
+		transition-duration: 0s
+
+	&[type="checkbox"] + label, &[type="radio"] + label
+		position: relative
+		padding-left: 25px
+		vertical-align: middle
+		user-select: none
+		cursor: pointer
+		color: $grey
+		line-height: rem(16px)
+		margin-right: 25px
+
+	&[type="checkbox"] + label:before, &[type="radio"] + label:before
+		box-sizing: content-box
+		content: ''
+		color: $main-color
+		+position(absolute, 50% null null 0)
+		+size(15px)
+		margin-top: -9px
+		border: 1px solid #dfdfdf
+		text-align: center
+		transition: all 0.4s ease
+
+	&[type="checkbox"] + label:after, &[type="radio"] + label:after
+		box-sizing: content-box
+		content: ''
+		background-color: $main-color
+		+position(absolute, 50% null null 4px)
+		+size(9px)
+		margin-top: -5px
+		transform: scale(0)
+		transform-origin: 50%
+		transition: transform 200ms ease-out
+
+	&[type="checkbox"]
+		+ label:after
+			background-color: transparent
+			top: 50%
+			left: 4px
+			width: 8px
+			height: 3px
+			margin-top: -4px
+			border-style: solid
+			border-color: #dfdfdf
+			border-width: 0 0 3px 3px
+			border-image: none
+			transform: rotate(-45deg) scale(0)
+
+		&:checked + label:after
+			content: ''
+			transform: rotate(-45deg) scale(1)
+			transition: transform 200ms ease-out
+
+	&[type="radio"]
+		&:checked + label
+			&:before
+				animation: borderscale 300ms ease-in
+				background-color: #fff
+			&:after
+				transform: scale(1)
+
+	&[type="radio"] + label:before, &[type="radio"] + label:after
+		border-radius: 50%
+
+	&[type="checkbox"]:checked + label
+		&:before
+			animation: borderscale 200ms ease-in
+			background: $main-color
+		&:after
+			transform: rotate(-45deg) scale(1)

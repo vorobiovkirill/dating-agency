@@ -1,6 +1,16 @@
 @import 'bourbon'
 @import 'helpers/variables'
 
+.clear_fix
+	&:after
+		content: '.'
+		display: block
+		height: 0
+		font-size: 0
+		line-height: 0
+		clear: both
+		visibility: hidden
+
 .responsive-img
 	display: block
 	max-width: 100%
