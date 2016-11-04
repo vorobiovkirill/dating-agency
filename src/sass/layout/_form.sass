@@ -1,6 +1,12 @@
 @import 'bourbon'
 @import 'helpers/variables'
 
+label.required:after
+	content: '*'
+	font-size: rem(18)
+	color: #D32F2F
+	margin-left: 5px
+
 .register-form-wrapper
 	background: rgba(0,0,0,0.52)
 	border-radius: 15px

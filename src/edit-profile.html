@@ -431,6 +431,8 @@
 
 													Редактирование профиля
 
+
+
 												</div>
 
 											</div>
@@ -569,9 +571,11 @@
 
 															</div>
 
-															<div id="" class="photos-row" style="background-image: url('img/anketa-images/telka-5.jpg'); width: 90px; height: 80px;">
+															<!-- INPUT ADD IMAGES -->
 
-																<a href="#" id=""></a>
+															<div id="" class="photos-row file-wrap">
+
+																<input class="ep-input" type="file" id="" name="" multiple="">
 
 															</div>
 
@@ -590,6 +594,14 @@
 											<div class="col-lg-12">
 
 												<div class="pedit-form-wrapper">
+
+													<legend>
+
+														Заполните информацию ниже, чтобы обновить профиль
+
+														<span class="required-field-description">* обязательное поле для заполнения</span>
+
+													</legend>
 
 													<!-- EDIT FORM START -->
 
@@ -613,13 +625,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Имя на сайте:</label>
+																			<label class="required" for="">Имя на сайте:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -629,7 +641,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Дата рождения:</label>
+																			<label class="required"  for="">Дата рождения:</label>
 
 																		</div>
 
@@ -639,7 +651,7 @@
 
 																				<div class="select-container">
 
-																					<select value="" name="" id="" class="ep-input">
+																					<select value="" name="" id="" class="ep-input" required>
 																						<option value="">1</option>
 																						<option value="">2</option>
 																						<option value="">3</option>
@@ -653,7 +665,7 @@
 
 																				<div class="select-container">
 
-																					<select value="" name="" id="" class="ep-input">
+																					<select value="" name="" id="" class="ep-input" required>
 																						<option value="">Январь</option>
 																						<option value="">Февраль</option>
 																						<option value="">Март</option>
@@ -667,7 +679,7 @@
 
 																				<div class="select-container">
 
-																					<select value="" name="" id="" class="ep-input">
+																					<select value="" name="" id="" class="ep-input" required>
 																						<option value="">1950</option>
 																						<option value="">1951</option>
 																						<option value="">1952</option>
@@ -685,13 +697,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Знак зодиака:</label>
+																			<label class="required" for="">Знак зодиака:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<select value="" name="" id="" class="ep-input">
+																			<select value="" name="" id="" class="ep-input" required>
 																				<option value="">Рыбы</option>
 																				<option value="">Рыбы</option>
 																				<option value="">Рыбы</option>
@@ -706,7 +718,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Фактический адрес:</label>
+																			<label class="required" for="">Фактический адрес:</label>
 
 																		</div>
 
@@ -714,13 +726,13 @@
 
 																			<div class="inputs-wrapper">
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Страна">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Страна" required>
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Город">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Город" required>
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Улица">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Улица" required>
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Индекс">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="Индекс" required>
 
 																			</div>
 
@@ -732,15 +744,17 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Семейное положение:</label>
+																			<label class="required" for="">Семейное положение:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<select value="" name="" id="" class="ep-input">
+																			<select value="" name="" id="" class="ep-input" required>
 																				<option value="">Замужем</option>
-																				<option value="">Одинокая пизда</option>
+																				<option value="">Замужем</option>
+																				<option value="">Замужем</option>
+																				<option value="">Замужем</option>
 																			</select>
 
 																		</div>
@@ -751,7 +765,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Дети:</label>
+																			<label class="required" for="">Дети:</label>
 
 																		</div>
 
@@ -823,7 +837,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Хотите ли больше детей:</label>
+																			<label class="required" for="">Хотите ли больше детей:</label>
 
 																		</div>
 
@@ -869,13 +883,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Рост (см):</label>
+																			<label class="required" for="">Рост (см):</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -885,13 +899,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Вес (кг):</label>
+																			<label class="required" for="">Вес (кг):</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -901,13 +915,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Цвет волос:</label>
+																			<label class="required" for="">Цвет волос:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -917,13 +931,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Цвет глаз:</label>
+																			<label class="required" for="">Цвет глаз:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -953,13 +967,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Образование (специальность):</label>
+																			<label class="required" for="">Образование (специальность):</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -969,13 +983,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Профессиональная деятельность:</label>
+																			<label class="required" for="">Профессиональная деятельность:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -985,13 +999,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Знание английского языка:</label>
+																			<label class="required" for="">Знание английского языка:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<select value="" name="" id="" class="ep-input">
+																			<select value="" name="" id="" class="ep-input" required>
 																				<option value="">Базовый</option>
 																				<option value="">Лондон иза капитэл</option>
 																			</select>
@@ -1004,7 +1018,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Водительские права:</label>
+																			<label class="required" for="">Водительские права:</label>
 
 																		</div>
 
@@ -1050,13 +1064,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Вероисповедание:</label>
+																			<label class="required" for="">Вероисповедание:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1066,15 +1080,16 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Курите ли Вы:</label>
+																			<label class="required" for="">Курите ли Вы:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<select value="" name="" id="" class="ep-input">
+																			<select value="" name="" id="" class="ep-input" required>
 																				<option value="">Нет</option>
-																				<option value="">только шмаль</option>
+																				<option value="">Нет</option>
+																				<option value="">Нет</option>
 																			</select>
 
 																		</div>
@@ -1085,15 +1100,17 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Отношение к алкоголю:</label>
+																			<label class="required" for="">Отношение к алкоголю:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<select value="" name="" id="" class="ep-input">
+																			<select value="" name="" id="" class="ep-input" required>
 																				<option value="">Негативное</option>
-																				<option value="">Печень по пизде</option>
+																				<option value="">Негативное</option>
+																				<option value="">Негативное</option>
+																				<option value="">Негативное</option>
 																			</select>
 
 																		</div>
@@ -1104,13 +1121,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Жизненное кредо:</label>
+																			<label class="required" for="">Жизненное кредо:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1120,13 +1137,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Опишите себя:</label>
+																			<label class="required" for="">Опишите себя:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1136,13 +1153,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Увлечения:</label>
+																			<label class="required" for="">Увлечения:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1152,13 +1169,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Ваша мечта:</label>
+																			<label class="required" for="">Ваша мечта:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea type="text" value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1188,13 +1205,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимая еда:</label>
+																			<label class="required" for="">Любимая еда:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1204,13 +1221,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимая музыка:</label>
+																			<label class="required" for="">Любимая музыка:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1220,13 +1237,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимый фильм:</label>
+																			<label class="required" for="">Любимый фильм:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1236,13 +1253,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимое время года:</label>
+																			<label class="required" for="">Любимое время года:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1252,13 +1269,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимый город:</label>
+																			<label class="required" for="">Любимый город:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1268,13 +1285,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Любимые подарки:</label>
+																			<label class="required" for="">Любимые подарки:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1304,13 +1321,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">О потенциальном партнере:</label>
+																			<label class="required" for="">О потенциальном партнере:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1320,7 +1337,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Возраст потенциального партнера:</label>
+																			<label class="required" for="">Возраст потенциального партнера:</label>
 
 																		</div>
 
@@ -1328,9 +1345,9 @@
 
 																			<div class="inputs-wrapper">
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="от">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="от" required>
 
-																				<input type="text" value="" name="" id="" class="ep-input" placeholder="до">
+																				<input type="text" value="" name="" id="" class="ep-input" placeholder="до" required>
 
 																			</div>
 
@@ -1362,13 +1379,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Адрес прописки:</label>
+																			<label class="required" for="">Адрес прописки:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<textarea value="" name="" id="" class="ep-input" maxlength="255"></textarea>
+																			<textarea value="" name="" id="" class="ep-input" maxlength="255" required></textarea>
 
 																		</div>
 
@@ -1378,13 +1395,13 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Индекс:</label>
+																			<label class="required" for="">Индекс:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 
@@ -1474,7 +1491,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Viber:</label>
+																			<label class="required" for="">Viber:</label>
 
 																		</div>
 
@@ -1500,7 +1517,7 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Face Time:</label>
+																			<label class="required" for="">Face Time:</label>
 
 																		</div>
 
@@ -1550,13 +1567,29 @@
 
 																		<div class="pedit-label">
 
-																			<label for="">Как вы о нас узнали?</label>
+																			<label class="required" for="">Ссылка на Youtube:</label>
 
 																		</div>
 
 																		<div class="pedit-input">
 
-																			<input type="text" value="" name="" id="" class="ep-input">
+																			<input type="text" value="" name="" id="" class="ep-input" required>
+
+																		</div>
+
+																	</div>
+
+																	<div class="pedit-form-group clear_fix">
+
+																		<div class="pedit-label">
+
+																			<label class="required" for="">Как вы о нас узнали?</label>
+
+																		</div>
+
+																		<div class="pedit-input">
+
+																			<input type="text" value="" name="" id="" class="ep-input" required>
 
 																		</div>
 

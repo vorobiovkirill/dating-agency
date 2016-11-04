@@ -17,7 +17,7 @@
 	margin-bottom: 35px
 
 .profile-main-avatar
-	height: 330px
+	height: 335px
 	background:
 		repeat: no-repeat
 		size: cover
@@ -42,10 +42,37 @@
 			display: block
 			+size(100%)
 
+.file-wrap
+	position: relative
+	+size(90px 80px)
+	background:
+		image: url('../img/add-image.jpg')
+		size: cover
+		repeat: no-repeat
+		position: center
+	overflow: hidden
+	text-align: center
+	cursor: pointer
+
+	.ep-input
+		+position(absolute, 0 0 null null)
+		font-size: 118px
+		margin: 0px
+		padding: 40px
+		cursor: pointer
+		opacity: 0
 
 
 .pedit-form-wrapper
-	margin-top: 55px
+	margin-top: 40px
+
+	legend
+		color: #757575
+		font-size: rem(16)
+		line-height: rem(20px)
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 35px
 
 .accordion-edit-details
 	padding: 30px 0
@@ -124,5 +151,12 @@
 
 .pedit-input-link
 	padding: 9px 0
+
+.required-field-description
+	color: #D32F2F
+	font-size: rem(12)
+	line-height: rem(15px)
+	margin-left: 30px
+	text-transform: none
 
 
