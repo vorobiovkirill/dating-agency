@@ -1,0 +1,22 @@
+@import 'bourbon'
+@import 'helpers/variables'
+
+.sl-overlay
+	background: darken($grey, 5%)
+
+.sl-counter
+	color: #fff
+
+.sl-close
+	outline: 0
+	color: #fff
+
+.sl-navigation
+	.sl-prev
+		background: $accent-color
+		color: #fff
+		outline: 0
+		&:hover
+			background: darken($accent-color, 1%)
+	.sl-next
+		@extend .sl-prev
