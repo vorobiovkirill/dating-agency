@@ -7,16 +7,21 @@
 .sl-counter
 	color: #fff
 
+.sl-image
+	border: 10px solid #fff
+
 .sl-close
 	outline: 0
 	color: #fff
 
-.sl-navigation
-	.sl-prev
-		background: $accent-color
-		color: #fff
-		outline: 0
-		&:hover
-			background: darken($accent-color, 1%)
-	.sl-next
-		@extend .sl-prev
+.sl-wrapper
+	.sl-navigation
+		.sl-prev
+			+size(65px)
+			background: $accent-color
+			color: #fff
+			outline: 0
+			&:hover
+				background: darken($accent-color, 1%)
+		.sl-next
+			@extend .sl-prev
